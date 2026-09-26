@@ -1,0 +1,22 @@
+input {
+    keyboard {
+        xkb {
+            layout "us,ara"
+            options "grp:win_space_toggle"
+        }
+        numlock // تفعيل الـ NumLock تلقائيًا عند بدء التشغيل
+    }
+
+    touchpad {
+        tap // تفعيل الضغط باللمس
+        natural-scroll // التمرير في اتجاه الشاشة (macOS style)
+    }
+
+    mouse {
+        accel-profile "flat" // إيقاف تسريع الماوس (Raw Input)
+        accel-speed 0.0      // سرعة متزنة بدقة متناهية
+    }
+
+    focus-follows-mouse // نقل التركيز للنافذة تلقائيًا بمجرد مرور الماوس عليها
+    workspace-auto-back-and-forth // التبديل التلقائي بين مساحة العمل الحالية والسابقة
+}
